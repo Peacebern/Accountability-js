@@ -1,5 +1,5 @@
 .destination_container {
-   background-image: url(" /assets/destination/background-destination-desktop.jpg");
+   background-image: url(" /space-tourism-website-main/assets/destination/background-destination-desktop.jpg");
 }
 
 .number {
@@ -68,7 +68,7 @@
 
 @media (max-width : 768px) {
    .destination_container {
-      background-image: url("/assets/destination/background-destination-tablet.jpg");
+      background-image: url("/space-tourism-website-main/assets/destination/background-destination-tablet.jpg");
    }
 
    .moon_img {
@@ -98,7 +98,7 @@
 
 @media (max-width: 500px) {
    .destination_container {
-      background-image: url(" /assets/destination/background-destination-mobile.jpg");
+      background-image: url(" /space-tourism-website-main/assets/destination/background-destination-mobile.jpg");
    }
    .description_header_text {
       text-align: center;

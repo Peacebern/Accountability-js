@@ -26,7 +26,7 @@ a {
 
 .main_container {
    min-height: 100vh;
-   background-image: url(" /assets/home/background-home-desktop.jpg");
+   background-image: url(" /space-tourism-website-main/assets/home/background-home-desktop.jpg");
    background-size: cover;
    overflow: hidden;
 }
@@ -168,7 +168,7 @@ a {
 
 @media (max-width: 768px) {
    .main_container {
-      background-image: url(" /assets/home/background-home-tablet.jpg");
+      background-image: url(" /space-tourism-website-main/assets/home/background-home-tablet.jpg");
    }
 
    .home_main_container {
@@ -202,7 +202,7 @@ a {
 
 @media (max-width: 500px) {
    .main_container {
-      background-image: url(" /assets/home/background-home-mobile.jpg");
+      background-image: url(" /space-tourism-website-main/assets/home/background-home-mobile.jpg");
    }
 
    .nav {
