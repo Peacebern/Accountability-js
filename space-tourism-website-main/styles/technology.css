@@ -1,5 +1,5 @@
 .technology_container {
-   background-image: url("/assets/technology/background-technology-desktop.jpg");
+   background-image: url("/space-tourism-website-main/assets/technology/background-technology-desktop.jpg");
 }
 
 .technology_main_container {
@@ -77,7 +77,7 @@
 
 @media (max-width: 768px) {
    .technology_container {
-      background-image: url("/assets/technology/background-technology-tablet.jpg");
+      background-image: url("/space-tourism-website-main/assets/technology/background-technology-tablet.jpg");
    }
 
    .technology_main_container {
@@ -99,6 +99,6 @@
 
 @media (max-width: 500px) {
    .technology_container {
-      background-image: url("/assets/technology/background-technology-mobile.jpg");
+      background-image: url("/space-tourism-website-main/assets/technology/background-technology-mobile.jpg");
    }
 }
