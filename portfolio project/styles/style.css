@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background-color: rgb(34, 37, 44);
+    font-family: 'Play', sans-serif;
+}
+
+.main {
+    max-width: 700px;
+    margin: 20rem auto;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: inherit;
+    /* height: 100vh; */
+    /* border: 5px solid blue; */
+}
+
+.main .sub-cont {
+    background-color: rgb(26, 27, 32);;
+}
+
+.ig {
+    width: 200%;
+    height: 100%;
+}
+
+.ig-cont {
+    width: 100%;
+    height: 500px;
+}
+
+.sub-cont {
+    background-color: rgb(26, 27, 32);
+    margin: 0;
+    padding: 1.5rem 2rem;
+}
+
+.persona {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(26, 27, 32);
+}
+
+.name {
+    font-size: xx-large;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(26, 27, 32);
+}
+
+.stack {
+    text-align: center;
+    font-size:large;
+    font-weight: 400;
+    color: rgb(165, 158, 153);
+    margin-bottom: 10px;
+    background-color: rgb(26, 27, 32);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.hub-reach {
+    font-size: small;
+    font-weight: 200;
+    color: rgb(146, 147, 152);
+    background-color: rgb(26, 27, 32);
+}
+
+.info-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 1rem 2rem;
+    margin: 1rem auto;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: rgb(26, 27, 32);
+
+}
+
+.first-but {
+    background-color: rgb(249, 250, 255);
+    padding: 1.5rem 4rem;
+    border: none;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: large;
+    
+}
+.second-but {
+    background-color: rgb(82, 146, 225);
+    padding: 1.5rem 4rem;
+    border-radius: 15px;
+    border: none;
+    font-weight: 300;
+    font-size: medium;
+}
+
+.ment2 {
+    color:rgb(155, 156, 161);
+    text-decoration: none;
+    background-color: rgb(26, 27, 32);
+
+}
+
+.ment {
+    background-color: rgb(82, 146, 225);
+    color: white;
+    text-decoration: none;
+    
+}
+
+.men {
+    background-color: rgb(249, 250, 255);
+    text-decoration: none;
+    border: none;
+    color: inherit;;
+
+}
+
+.env {
+    text-decoration: none;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: large;
+    background-color: white;
+    margin: auto 1rem;
+    
+}
+
+.lin {
+    text-decoration: none;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+    font-size: large;
+    background-color: white;
+    margin: auto 1rem; 
+    color: inherit;
+}
+
+.nxt {
+    background-color: rgb(26, 27, 32);
+    padding-top: 1rem;
+}
+
+.net {
+    background-color: rgb(26, 27, 32);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: none;
+    background-color: rgb(26, 27, 32);
+}
+
+.abt {
+    font-size: larger;
+    font-weight: 700;
+    /* padding: 0.5rem 0; */
+    padding: auto;
+    background-color: rgb(26, 27, 32);
+}
+
+.int {
+    font-size: large;
+    font-weight: 700;
+    /* padding: 0.5rem 0; */
+    padding: auto;
+    background-color: rgb(26, 27, 32);
+}
+
+
+footer {
+    background: rgb(22, 22, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 2rem 0;
+    font-size: xx-large;
+}
+
+
+.tweet {
+    font-size: xx-large;
+    background-color: white;
+    text-decoration: none;
+}
+
+.col {
+    color: inherit;
+}
+
+
+/* @media (min-width: 992px) {
+    main {
+        max-width: 700px;
+        margin: 20rem auto;
+        overflow: hidden;
+        border-radius: 20px;
+        border: 5px solid grey;
+    }
+} */
+
+@media only screen and (min-width: 768px) {
+    main {
+        max-width: 500px;
+        margin: 10rem auto;
+        overflow: hidden;
+        border-radius: 20px;
+        border: 5px solid grey;
+    }
+}
