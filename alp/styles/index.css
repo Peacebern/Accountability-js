@@ -5,6 +5,7 @@
     max-width: 100%;
 }
 
+
 /** saving color codes with variables **/
 :root {
     --primary-Bg: rgb(250, 250, 250);
@@ -19,6 +20,11 @@ body {
     background-color: var(--primary-Bg);
     color: var(--grey);
     font-size: 1rem;
+}
+
+.max-width {
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .container {
@@ -57,7 +63,7 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin:auto;
 
 }
@@ -70,10 +76,15 @@ button {
 
 }
 
+.menu {
+    display: none;
+}
+
 /** Section-1 **/
 
 .hero {
     background-image: url(/images/Background1.svg);
+    background-size: cover;
     border-radius: 60px;
     overflow: hidden;
     display:flex;
@@ -180,24 +191,28 @@ button {
 }
 
 .sec-cont {
+    position: relative;
     display: flex;
-    gap: 55px;
+    justify-content: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    /* flex-wrap: wrap; */
+    gap: 100px;
+    align-items: center;
 }
 
 .circle {
     position: absolute;
     width: 120px;
     height: 120px;
-    /* left: 18px;
-    top: 1893px; */
+    top: 50%;
+    transform: translateY(-50%);
     background-color: #FCA311;
     backdrop-filter: blur(5px);
     border-radius: 100%;
     display: flex;
     align-items: center;
-    transform: translateX(-15%);
-    right: 86%;
-    bottom: 355px;
+    left: -55px;
     text-align: center;
 }
 
@@ -205,31 +220,31 @@ button {
 
 .frame3-1 {
     position: relative;
-    top: 0;
-    left: 0;
 }
 
 .img-1 {
     position: relative;
-    top: 0;
-    left: 0;
-    /* border: 1px solid #000000; */
+    max-width: 100%;
 }
 
 .img-2 {
     position: absolute;
     top: 40px;
     left: 10px;
+    max-width: 100%;
 }
 
 .spec-challenges {
     margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .spec-challenges p {
     font-weight: 400;
     font-size: 18px;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     color: #303948;
     
@@ -238,45 +253,47 @@ button {
 .spec-challenges h2 {
     /* position: absolute; */
     width: 615px;
-    height: 102px;
-    left: 645px;
-    top: 120px;
-    
-
-/* H2 */
-
     font-weight: 500;
     font-size: 36px;
-    display: flex;
     align-items: center;
-
-/* Warna Primary */
-
     color: #14213D;
-
 }
 
-.services {
+.real-challenge {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.real-challenge-sub {
+    display: grid;
+    padding: 1rem;
+}
+
+.real-challenge-sub1 {
+    display: flex;
+    gap : 10px;
+}
+
+/* .services {
     display: flex;
     gap:83px;
-}
+} */
 
-.web {
+/* .web {
     display: flex;
     gap: 10px;
     padding-top: 2rem;
-}
+} */
 
-.grid {
+/* .grid {
     display: flex;
     gap: 10px;
     padding-top: 2rem;
-}
+} */
 
 .loremm {
-    display: flex;
-    margin-top: 40px;
-    gap: 50px;
+    /* display: flex; */
+    gap: 10px;
 }
 
 .loremm p {
@@ -301,7 +318,9 @@ button {
 
 .services-1 {
     display: flex;
-    gap:190px;
+    /* gap:190px; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     /* justify-content: space-between; */
 }
 
@@ -429,8 +448,9 @@ Button
 
 .section3-cont {
     display: flex;
-    gap: 480px;
-    /* justify-content: space-around; */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; /** use margin: 0 auto when u give a container a max width inorder for it to center it self when the max-width is achieved in any screen**/
 }
 
 .section3-cont-sub1 {
@@ -481,10 +501,11 @@ Button
 
 .section3-cont1-sub1 {
     display: flex;
-    /* justify-content:space-around; */
+    justify-content: center;
     margin-top: 80px;
     margin-left: 35px;
     gap: 80px;
+    flex-wrap: wrap;
 
 }
 
@@ -528,6 +549,7 @@ Button
     justify-content: center;
     gap: 100px;
     padding: 6rem 0 0 0;
+    flex-wrap: wrap;
 }
 
 .section4-sub {
@@ -646,6 +668,7 @@ Button
 
 .section5 {
     background-image: url(/images/image\ 1.svg);
+    background-size: cover;
     border-radius: 60px;
     /* overflow: hidden; */
     position: relative;
@@ -654,17 +677,10 @@ Button
 }
 
 .section5-main {
-    /* background-image: url(/images/image\ 1.svg);
-    border-radius: 60px;
-    overflow: hidden;
-    position: relative; */
     padding: 2rem 2rem;
     display:flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* gap: 50px; */
-    /* color: var(--white); */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 
@@ -688,6 +704,7 @@ Button
 .section5-list {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .section5-list ul {
@@ -746,10 +763,162 @@ Button
 }
 
 
-/* @media (max-width: 576px) {
-    body {
-        display: block;
+
+/** Section 2 correction **/
+
+.section2 {
+    padding: 2rem;
+    align-items: center;
+}
+
+.section2-cont {
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section2-sub1 {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    gap: 75px;
+    margin-top: 100px;
+}
+
+.section2-p1 {
+    font-weight: 900;
+    font-size: 36px;
+    color: #303948;
+}
+
+.section2-p2 {
+    width: 485.51px;
+    left: 0px;
+    top: 297px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #59616D;
+}
+
+
+.butt {
+    width: 262.11px;
+    padding: 1rem;
+    font-size: 22px;
+    background: #14213D;
+    border-radius: 35px;
+    color: var(--white);
+}
+
+.section2-sub2 {
+    position: relative;
+}
+
+.section2-sub2-img1 {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+.orange-eclipse-cont {
+    position: relative;
+}
+
+.orange-eclipse {
+    position: absolute;
+    transform: translateX(15%);
+    top: -30px;
+    right: -20px;
+
+}
+
+.pad {
+    padding-top: 1rem;
+}
+
+.black-eclipse {
+    position: relative;
+}
+
+.black-eclipse-img {
+    position: absolute;
+    transform: translateX(-15%);
+    top: 50px;
+    /* z-index: -1; */
+    left: -50px;
+
+}
+
+.dot-grid-orange {
+    position: relative;
+}
+
+.dot-grid-orange-img {
+    position: absolute;
+    transform: translateX(50%);
+    bottom: -55px;
+    z-index: -1;
+}
+
+@media (max-width: 1181px) {
+    .hero {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sec-cont {
+        flex-wrap: wrap;
+    }
+
+    .spec-challenges {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .real-challenge {
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
     }
 }
 
-@media () */
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+        z-index: 2;
+    }
+
+    .nav-ul {
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--white);
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        padding: 5rem 2rem;
+        transform: translateX(-100%);
+    }
+
+    .oluchi {
+        transform: translateX(0);
+    }
+
+    .nav-li {
+        display: block;
+        margin: auto;
+        width: max-content;
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+
