@@ -276,6 +276,7 @@ button {
 .real-challenge-sub1 {
     display: flex;
     gap : 10px;
+    align-items: center;
 }
 
 
@@ -927,6 +928,7 @@ button {
 
     .section3-cont1-sub1 {
         margin: 0;
+
     }
 
     .real-challenge {
@@ -962,6 +964,20 @@ button {
         top: 10px;
         bottom: 500px;
         margin-top: 140px;
+    }
+
+    .section5 {
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    .section5-rec16 {
+        right: -20px;
+    }
+
+    .arrow {
+        margin-top: 70px;
     }
 }
 
