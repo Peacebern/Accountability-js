@@ -21,6 +21,7 @@ body {
     color: var(--grey);
     font-size: 1rem;
     overflow-x:hidden;
+
 }
 
 .max-width {
@@ -138,12 +139,14 @@ button {
     /* z-index: 1; */
     transform: translateX(50%);
     right: 50%;
-    bottom: -100px; 
+    bottom: -75px; 
 }
+
 
 /** Section-2 **/
 
 .client {
+    padding-top: 2rem;
     display: block;
     gap: 20px;
     text-align: center;
@@ -275,22 +278,6 @@ button {
     gap : 10px;
 }
 
-/* .services {
-    display: flex;
-    gap:83px;
-} */
-
-/* .web {
-    display: flex;
-    gap: 10px;
-    padding-top: 2rem;
-} */
-
-/* .grid {
-    display: flex;
-    gap: 10px;
-    padding-top: 2rem;
-} */
 
 .loremm {
     /* display: flex; */
@@ -343,27 +330,13 @@ button {
 }
 
 .p-sub {
-    /* position:absolute; */
-    /* width: 556px;
-    height: 51px;
-    left: 0px;
-    top: 194px; */
-
-/* H2 */
-
     font-weight: 500;
     font-size: 36px;
-
-/* Warna Teks */
-
     color: #303948;
-
 }
 
 .p-sub1 {
-    /* position: absolute; */
     width: 485.51px;
-    /* height: 130px; */
     left: 0px;
     top: 297px;
 
@@ -385,34 +358,10 @@ button {
     left: 0px;
     top: 487px;
     font-size: 22px;
-    
-
-/* Warna Primary
-
-Button
-*/
     background: #14213D;
     border-radius: 35px;
     color: var(--white);
 }
-
-/* .process-sub1 {
-    display: flex;
-    gap: 50px;
-
-}
-
-.gp-img {
-    margin-top: 20px;
-}
-
-
-.process-img {
-    height: 260px;
-    border-radius: 34px;
-
-} */
-
 .process-circle {
     position: absolute;
     width: 80px;
@@ -480,9 +429,6 @@ Button
 .section3-cont-sub-p2 {
     font-weight: 500;
     font-size: 36px;
-    /* display: flex;
-    align-items: center; */
-/* Warna Primary */
     color: #14213D;
 }
 
@@ -521,9 +467,6 @@ Button
     margin-top: 10px;
     font-weight: 600;
     font-size: 36px;    /* align-items: center; */
-    
-    /* Warna Primary */
-    
     color: #14213D;
 
 }
@@ -556,8 +499,16 @@ Button
 .section4-sub {
     position: relative;
     flex-basis: 400px;
-    
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
 
+}
+
+.stupid-img {
+    margin: auto;
 }
 
 
@@ -576,7 +527,7 @@ Button
     position: absolute;
     width: 150px;
     height: 150px;
-    left: 295px;
+    right: -35px;
     top: -60px;
     transform: translateX(15%);
     z-index: -1;
@@ -588,7 +539,7 @@ Button
     position: absolute;
     width: 80px;
     height: 80px;
-    left: 340px;
+    right: -20px;
     top: -20px;
     transform: ranslateX(15%);
 }
@@ -619,8 +570,8 @@ Button
     position: absolute;
     width: 100px;
     height: 100px;
-    left: 360px;
-    top: 450px;
+    right: -50px;
+    bottom: 60px;
     border-radius: 100%;
     background: rgba(252, 163, 17, 0.5);
     backdrop-filter: blur(5px);
@@ -768,7 +719,7 @@ Button
 /** Section 2 correction **/
 
 .section2 {
-    padding: 2rem;
+    /* padding: 2rem; */
     align-items: center;
 }
 
@@ -776,7 +727,7 @@ Button
     display: flex;
     gap: 70px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -919,6 +870,99 @@ Button
         margin-bottom: 1rem;
     }
 
+}
+
+@media (max-width: 500px) {
+
+    .section4-sub {
+        width: 90%;
+    }
+
+    .dot-grid {
+        width: 50px;
+        height: 50px;
+        right: -15px;
+        top: -15px;
+    }
+    
+    .dot-grid1 {
+        width: 30px;
+        height: 30px;
+        right: -10px;
+        top: -5px;
+    }
+
+    .section4-circle {
+        width: 40px;
+        height: 40px;
+        right: -20px;
+    }
+
+    .black-eclipse-img {
+        top: 70px;
+        left: -15px;
+        width: 40%;
+    
+    }
+    
+    .dot-grid-orange-img {
+
+        bottom: -35px;
+        right: 10px;
+        width :50%;
+    }
+
+    .orange-eclipse {
+        width: 40%;
+        height: 40%;
+    }
+
+    .section3-cont {
+        display: block;
+    }
+
+    .section3-cont-sub2 {
+        padding: 2rem;
+    }
+
+    .section3-cont1-sub1 {
+        margin: 0;
+    }
+
+    .real-challenge {
+        padding: 0;
+    }
+
+    .circle {
+        display: none;
+    }
+    
+    .spiral {
+        width: 80%;
+        padding: 0.5rem 1.5rem;
+        align-items: center;
+        text-align: center;
+        bottom: -85px;
+        height: 20%;
+    }
+
+    .spiral p {
+        margin: 1rem auto;
+
+    }
+
+    .hero {
+        margin-bottom: 40px;
+    }
+
+    .section4-rec {
+        width: 50px;
+        height: 50px;
+        left: -20px;
+        top: 10px;
+        bottom: 500px;
+        margin-top: 140px;
+    }
 }
 
 
