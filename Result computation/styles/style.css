@@ -68,9 +68,10 @@
     flex-shrink: 1;
 }
 
-/* .sub20f1-cont {
-
-} */
+.sub20f1-cont {
+    text-align:start;
+    
+}
 
 .summa {
     margin: 2rem 4rem;
@@ -79,6 +80,8 @@
 
 .ulcer {
     display: flex;
+    justify-content: center;
+    align-self: center;
     flex-wrap: wrap;
     /* gap: 4%; */
     flex-direction:column;
@@ -141,6 +144,7 @@
     border-radius: 15px;
     /* background-color: brown; */
     font-size:x-large;
+    gap: 25px;
 }
 
 .ulcersub1 {
@@ -152,6 +156,12 @@
     font-size:x-large;
     
     
+}
+
+@media(min-width: 500px) {
+    .sub20f1-cont {
+        text-align: center;
+    }
 }
 
 @media (min-width:900px){
