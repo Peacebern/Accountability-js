@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let user = {
+            name: "john",
+            age: 50,
+            men: "Are scum",
+            size: {
+                height: 24,
+                width: 45,
+            },
+            };
+
+            let clone = Object.assign({}, user);
+
+            //now we have to check if the objects properties that are cloned are truly separate objects opject from the original object
+            console.log(user.size === clone.size ); // this prints "true" which is not supposed to be so, we notice they are same rather than being different and this can be corrected by using a concept know as Structured clone.
+    </script>
+</body>
+</html>

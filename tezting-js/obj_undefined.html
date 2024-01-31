@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = {
+        //     name: "john",
+        //     age: 30,
+        // };
+
+        // alert(user.admin === undefined); 
+        // this alert true as 'admin' is not previously defined in the user object
+
+
+
+        //Also we can check using "in"
+        let user = {
+            name: "john",
+            age: 30,
+        };
+
+        alert(user.admin in user);
+        // this alert false as "admin" is not in the user object
+
+    </script>
+</body>
+</html>

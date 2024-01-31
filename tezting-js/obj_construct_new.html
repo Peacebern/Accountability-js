@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Usually, constructors do not have a return statement. Their task is to write all necessary stuff into "this" i.e an implicit object and it automatically becomes the result.
+        //the "new" construct where a function is created and it contains multiple objects properties but not the original object itself  here the function is started with a capital letter
+        function User(name) {
+            this.name = name; //here name is a placeholder for the value of "name" in the original object
+            this.admin = false; //here false is a placeholder for the value of "admin" in the original object
+        };
+
+        let clone = new User("jack"); //here the "new" construct is used to create the object "clone" so the previous properties mentioned in the function is now copied into the new object "clone", multiple objects can be created like this, for instance the one below
+
+        // let ment = new User("pete")
+        // alert(ment.name);
+        // alert(ment.admin);
+
+        alert(clone.name);
+        alert(clone.admin);
+
+
+        //this whole function implies that the following below is done implicitly
+        // function User(name) {
+        //     this = {};  (implicitly)
+
+        //     add properties to this
+        //     this.name = name;
+        //     this.isAdmin = false;
+
+        //     return this;  (implicitly)
+        //     }
+
+        // So let user = new User("Jack") gives the same result as:
+        // let user = {
+        //     name: "Jack",
+        //     isAdmin: false
+        //     };
+
+
+    </script>
+</body>
+</html>

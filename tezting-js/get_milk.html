@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let bottles = +prompt("enter number of bottles of milk");
+
+
+        // function getMilk(bottles) {
+        //     console.log("i want " + bottles + " bottles of milk");
+        // };
+
+        // getMilk(bottles);
+
+        // now we have to modify the function so it takes in cost and shows how much per bottle
+        
+
+        // let money = +prompt("Enter the budget for milk: ");
+        
+
+        // function getMilk(money) {
+        //     let costPer = 1.5;
+        //     let ment = money / costPer;
+        //     let milkBought = Math.floor(ment);
+        //     console.log("I got you " + milkBought + " bottles of milk as you gave me " + money + " naira");
+        //     return money % costPer;
+
+        // };
+            
+        //     var change = getMilk(money);
+        //     console.log(change);
+
+
+        // writing a mini getMilk function so it returns money remaining after buying milk
+
+        // function getMilk(money) {
+        //     console.log(money);
+        //     return money % 1.5;
+        // };
+
+        // var change = getMilk(4);
+        // console.log(change);
+
+        // writing the getMilk function so it takes in other functions instead of using literals
+
+        let money = +prompt("Enter the budget for milk: ");
+        
+
+        function getMilk(money) {
+            let costOne = 1.5;
+            console.log("I got you " + milkBuy(money, costOne) + " bottles of milk as you gave me " + money + " naira");
+            return milkChange(money, costOne);
+
+        };
+            
+        var change = getMilk(money);
+        console.log(change);
+
+        function milkBuy(budget, costPer) {
+            let milkBuy = Math.floor(budget / costPer);
+            return milkBuy;
+
+        }
+
+        function milkChange(budget, costPer) {
+            let milkChange = budget % costPer;
+            return milkChange;
+        }
+
+        // function milkBuy(budget, costOne) {
+        //     let milkBuy = Math.floor(budget / costOne);
+        //     return milkBuy;
+
+        // }
+    </script>
+</body>
+</html>

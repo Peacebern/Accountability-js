@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function BigUser() {
+            this.name = "jack";
+
+            return {name: "pete"};
+        }
+
+        alert( new BigUser().name); //this prints "pete" instead of the original value of the name property which is "jack" in the function constructor, this is because as the object BigUser using "new" in this line the object is created but thereafter the function constructor returned name as"pete" cause it has a return statment asking it to do so.
+        
+        let clone = new BigUser(); //same thing is done here as another object "clone" to take in the function constructor BigUse()
+
+        alert(clone.name); // this prints "pete"  as thats what the function returns 
+    
+    </script>
+</body>
+</html>

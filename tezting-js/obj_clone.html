@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+            name: "john",
+            age: 50,
+            men: "Are scum",
+        };
+
+        let peace = {};
+        // user.name = "Oluchi";
+
+        for(let key in user) {
+            peace[key] = user[key];
+        };
+        peace.name = "gloria";
+        console.log(user.name); // it prints john cause "john" doesn't change to "gloria" as it was cloned not copied to another object: this implie sthat when objects are cloned their properties and values can be updated individually and the original object can retain its properties value regardless of any updates made in the newly cloned object values
+        console.log(peace.name);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+            name: "Ayra",
+
+            sayHi() {
+                let arr = () => alert(this.name);
+                arr(); // we called the arror function "arr" inside the sayHi method because arrow functions don't have a "this" like other functions so we can't use "this.name" without calling the function holding it, also it need to be there so it knows its the surrounding object which in this case is "user" that it needs to inherit a "this" from
+            },
+        };
+
+        user.sayHi();
+    </script>
+</body>
+</html>
