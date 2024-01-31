@@ -1,0 +1,104 @@
+.technology_container {
+   background-image: url("/space-tourism-website-main/assets/technology/background-technology-desktop.jpg");
+}
+
+.technology_main_container {
+   display: grid;
+   gap: 20px;
+   width: 90%;
+   margin-left: 10%;
+   padding: 1rem 0;
+}
+
+.technology_sub_container {
+   display: grid;
+   grid-template-columns: 1.5fr 1fr;
+   gap: 20px;
+   align-items: center;
+}
+
+.technology_img {
+   width: 100%;
+}
+
+.tech_nav_cont {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 40px;
+   padding-right: 1rem;
+}
+
+.tech_nav {
+   flex-direction: column;
+   display: flex;
+   gap: 20px;
+}
+
+.tech_link {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   border: 1px solid var(--primary);
+   display: grid;
+   place-items: center;
+   font-size: 32px;
+}
+
+.tech_active {
+   background: var(--white);
+   color: var(--black);
+}
+
+.tech_data {
+   display: grid;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.tech_data_header {
+   color: var(--powderBlue);
+   font-family: var(--secondary-font);
+   font-size: 16px;
+}
+
+.tech_date_type {
+   font-size: 56px;
+   font-family: var(--header-font);
+}
+
+.tech_data_description {
+   font-size: 18px;
+   color: var(--powderBlue);
+   width: 80%;
+
+}
+
+/* ======== MEDIA QUERIES ========= */
+
+@media (max-width: 768px) {
+   .technology_container {
+      background-image: url("/space-tourism-website-main/assets/technology/background-technology-tablet.jpg");
+   }
+
+   .technology_main_container {
+      width: 100%;
+      padding: 1rem 0;
+      margin: 0;
+   }
+   .technology_sub_container {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+   .technology_img {
+      width: 100vw;
+      height: 400px;
+      object-fit: cover;
+      padding: 2rem 0;
+   }
+}
+
+@media (max-width: 500px) {
+   .technology_container {
+      background-image: url("/space-tourism-website-main/assets/technology/background-technology-mobile.jpg");
+   }
+}

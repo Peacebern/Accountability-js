@@ -1,0 +1,130 @@
+.destination_container {
+   background-image: url(" /space-tourism-website-main/assets/destination/background-destination-desktop.jpg");
+}
+
+.number {
+   color: var(--primary);
+}
+
+.destination_items {
+   display: flex;
+   gap: 20px;
+   list-style: none;
+}
+
+.destination_links {
+   padding-bottom: .5rem;
+}
+
+.destination_c {
+   padding-top: 4rem;
+}
+
+.moon_img {
+   width: 445px;
+}
+
+.description_header_text {
+   font-family: var(--secondary_font);
+   text-transform: uppercase;
+   font-size: 28px;
+   padding:2rem 4rem 0;
+}
+
+.destination_title {
+   font-family: var(--header-font);
+   font-size: 115px;
+}
+
+.destination_description {
+   padding-bottom: 3rem;
+   border-bottom: 1px solid var(--border);
+   font-size: 18px;
+}
+
+.destination_data_description_container {
+   display: flex;
+   gap: 80px;
+   padding: 1rem 0;
+   text-transform: uppercase;
+}
+
+.destination_data {
+   display: grid;
+   gap: 5px;
+}
+
+.data_header {
+   font-family: var(--secondary_font);
+   color: var(--primary);
+}
+
+.data_details {
+   font-size: 28px;
+   font-family: var(--header-font);
+}
+
+/* ====== MEDIA QUERIES ======= */
+
+@media (max-width : 768px) {
+   .destination_container {
+      background-image: url("/space-tourism-website-main/assets/destination/background-destination-tablet.jpg");
+   }
+
+   .moon_img {
+      width: 300px;
+   }
+   
+   .description_header_text {
+      font-size: 18px;
+      padding: 2rem ;
+   }
+   .destination_items {
+      justify-content: center;
+   }
+   .destination_title {
+      font-size: 80px;
+      padding: 1.5rem;
+   }
+   .destination_description {
+      font-size: 16px;
+      width: 80%;
+      margin: auto;
+   }
+   .destination_data_description_container {
+      justify-content: center;
+   }
+}
+
+@media (max-width: 500px) {
+   .destination_container {
+      background-image: url(" /space-tourism-website-main/assets/destination/background-destination-mobile.jpg");
+   }
+   .description_header_text {
+      text-align: center;
+      padding: 1rem 0;
+   }
+   .moon_img {
+      width: 170px;
+   }
+   .destination_c {
+      padding: 0;
+   }
+   .destination_links {
+      font-size: 14px;
+   }
+   .destination_title {
+      font-size: 56px;
+   }
+   .destination_description {
+      font-size: 15px;
+   }
+   .destination_data_description_container {
+      flex-direction: column;
+      gap: 1rem;
+      padding-bottom: 3rem;
+   }
+   .data_header {
+      font-size: 14px;
+   }
+}
