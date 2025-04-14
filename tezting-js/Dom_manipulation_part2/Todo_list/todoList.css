@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./cofee.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-container {
+    background-color: white;
+    width: 400px;
+    box-shadow: 0 0 3px;
+    border-radius: 20px;
+    padding: 20px 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#task-container input {
+    padding : 2px 20px 2px 10px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+
+
+#task-container i {
+    border: 2px solid green;
+    font-size: 22px;
+    padding : 1rem;
+    border-radius: 5px;
+    transition: .5s;
+    background-color: white;
+}
+
+#task-container i:hover {
+    background-color: green;
+    color : white;
+    transform: scale(1.1);  /* Slight zoom effect */
+}
+
+
+

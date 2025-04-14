@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Create your function below this line.
+        //The first parameter should be the weight and the second should be the height.
+        // function bmiCalculator(weight, height){
+        //     var bmi= Math.floor(weight/(height*height));
+        //     return bmi;
+        // }
+
+
+        //If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+        // var bmi = bmiCalculator(65, 5); 
+        // console.log(bmi);
+
+        //My own solution is below
+
+        let kilogram = +prompt("Enter your weight in kilogram: "); //line 24 takes an input for weight
+        let height = +prompt("Enter your height in meters: "); //line 25 takes an input for height in meters
+
+
+        function bmiCalculator(kilogram, height){
+            let bmiCalculator = Math.round(kilogram / (height * height)); // original math formular for bmi = weight/height in meters squared 
+            return bmiCalculator;
+        };
+
+        let bmi = bmiCalculator(kilogram, height);
+        console.log(bmi);
+
+    </script>
+</body>
+</html>

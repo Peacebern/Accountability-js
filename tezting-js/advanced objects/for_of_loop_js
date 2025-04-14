@@ -1,0 +1,7 @@
+//Note: The "for of" loop is used specifially for arrays to iterate through arrays values
+
+let fruits = ["apple", "melon", "paw\-paw", "banana"];
+
+for(fruits of fruits) {
+    console.log(fruits);
+}

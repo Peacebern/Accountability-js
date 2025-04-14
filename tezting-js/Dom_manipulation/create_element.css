@@ -1,0 +1,10 @@
+.ment{
+    background-color: black;
+    /* font-size: 30px; */
+    /* Now note the built in font size of h1 is not automatically copied from h1 when li is set to h1 we have to put it in a class that is connected to h1 as the setAttribute function only collects id, class and data* so if the font-size is not in a class it won't reflect on the li*/
+}
+
+.list-item{
+    color: blue;
+    font-size: 30px;
+}

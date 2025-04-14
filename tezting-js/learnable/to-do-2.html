@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        li input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .btn-container {
+            text-align: center;
+        }
+        button {
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <ul id="todo-list"></ul>
+        <div class="btn-container">
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="deleteTask()">Delete Task</button>
+            <button onclick="updateTask()">Update Task</button>
+        </div>
+    </div>
+
+    <script>
+        let arrTodo = [];
+
+        function addTask () {
+            const addtextTask = prompt("ENTER TASK");
+
+            if(addtextTask) {
+                arrTodo.push({text: addtextTask, completed: false});
+                renderTodo();
+            }
+        }
+
+        function deleteTask() {
+            const deleteChecked = document.querySelectorAll('input[type="checkbox"]: checked');
+
+            deleteChecked.forEach(box => {
+                const index = parseInt(box.id.replace('task', ''));
+                tasks.splice(index, 1);
+            });
+
+            renderTodo();
+        }
+
+        function updateTask() {
+            const updateTodo = 
+        }
+
+    </script>
+
+</body>
+</html>

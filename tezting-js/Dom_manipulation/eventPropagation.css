@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* justify-content: center; */
+    margin: auto;
+    background-color: rgb(46, 61, 71);
+    text-align: center;
+}
+
+.div2 {
+    border: 2px solid white;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5rem;
+    margin: 5rem;
+    color: #fff;
+
+}
+.div1 {
+    border: 2px solid white;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+button{
+    padding: 2rem;
+    color: #fff;
+    background-color: rgb(46, 61, 71);
+    border-radius: 0.5rem;
+    border: 2px solid white;
+}
