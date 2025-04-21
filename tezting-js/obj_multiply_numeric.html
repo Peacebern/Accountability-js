@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu",
+        men: 40,
+        her: "my love",
+        boy: 50,
+        };
+
+        
+        // after the call
+        // menu = {
+        // width: 400,
+        // height: 600,
+        // title: "My menu"
+        // };
+
+        multiplyNumeric(menu)
+
+        function multiplyNumeric(obj) {
+                for (let key in obj) {
+                    if (typeof obj[key] === 'number') {
+                        obj[key] *= 2;
+                        console.log(key + ": " + obj[key]); //line 38-38 makes it so that if the property value of the object is not a number it skips it and multiplies the next on ethat is a number
+                    }
+                }
+        }
+        //so esssentially the above function loops through the object and if its property values is a numeral it multiplies it by 2 and prints it out
+
+        // console.log(menu);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function readNumber() {
+            let princess = +prompt("enter a valid number: ", 0);
+            if(Number.isNaN(princess)) {
+                console.log(`you just entered an invalid number wtf is ${princess} `);
+            }
+            else {
+                console.log(parseInt(princess));
+            }
+        };
+
+        readNumber();
+    </script>
+</body>
+</html>

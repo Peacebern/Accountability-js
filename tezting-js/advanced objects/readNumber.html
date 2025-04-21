@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // "object.is" is a method that is used to compare two value e.g object.is(NaN, NaN) ==== true or object.is(a, b) is same as a === b
+
+        // function readNumber() {
+        //     let num;
+
+        //     do{
+        //         num = prompt("Enter a valid number: ", 0);
+        //     }while(!isFinite(num));
+
+        //     if(num === null || num === ""){
+        //         console.log("null");
+        //     }
+
+        //     return +num;
+        // }
+
+        // console.log(`Read: ${readNumber()}`);
+        function readNumber() {
+            let num;
+
+            do {
+                num = prompt("Enter a number please?", 0);
+            } while (!isFinite(num));
+
+            if (num === null || num.trim() === '') {
+                return null;
+            }
+
+            return +num;
+        }
+
+        console.log(`Read: ${readNumber()}`);
+
+
+    </script>
+</body>
+</html>

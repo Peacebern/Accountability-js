@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let imen = Symbol("id");
+        let iwomen = Symbol("id");
+
+        
+        alert(imen.description);
+        alert(imen === iwomen); //this prints false as symbols are unique and do not equate each other , symbols are used to create unique hidden properties of objects so that in a codebase being used by multiple developers no one would override each others object values as you can create yours as a symbol
+    </script>
+</body>
+</html>

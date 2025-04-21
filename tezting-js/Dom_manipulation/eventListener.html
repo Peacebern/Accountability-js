@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./eventListener.css" />
+	</head>
+	<body>
+		<h1 id="main-heading">Event Listeners</h1>
+		<div class="container">
+			<div class="boxes box1">
+				<h1>Example 1</h1>
+				<button class="btn-1" onclick="alert('i love js')">Enter</button> <!-- Here we add the event listener directly unto the html -->
+			</div>
+			<div class="boxes box2">
+				<h1>Example 2</h1>
+				<button class="btn-2">Enter</button> <!-- Here we add the event listener to the js file by using query selector to select this element by class name but when clicked it does the same thing as example 1 -->
+			</div>
+			<div class="boxes box3">
+				<h1>Example 3</h1>
+				<button class="btn-3">Enter</button>
+			</div>
+			<div class="boxes box4"> <!-- Here we use event listener to reveal a hidden text box when we click on the button -->
+				<button class="btn-4">Reaveal More</button>
+				<div class="hidden-content">
+					I am oluchi,
+					I am a swe with 3 years experience.
+					I currently work remotely for NDF.
+					I am oluchi,
+					I am a swe with 3 years experience.
+					I currently work remotely for NDF.
+					I am oluchi,
+					I am a swe with 3 years experience.
+					I currently work remotely for NDF.
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./eventListener.js"></script>
+</html>

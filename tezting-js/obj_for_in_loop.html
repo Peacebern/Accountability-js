@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = {
+        //     name: "john",
+        //     age: 30,
+        //     admin: "peace",
+        // };
+
+        // for(let key in user) {
+        //     console.log(key); // prints the object property names
+        //     console.log(user[key]); // prints the value of the properties in the object
+        // };
+
+
+        //Another Example
+        let user = {
+            name: "john",
+            age: 30,
+            admin: "peace",
+        };
+
+        user.occupation = "Software Engineer";
+
+        for(let props in user) {
+            console.log(props); //prints the object property names
+            console.log(user[props]); // prints the value of the properties in the object
+        };
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // <!-- syntax for indexOf is "str.indexOf(substr, pos)"or "string.indexOf(searchValue, startIndex)" where "pos" is the position of the string we trying to transform should start -->
+        let str = "Widget with id domethidg";
+
+        console.log(str.indexOf("Widget"));
+        console.log(str.indexOf("widget")); // outputs "-1" which is unfounded because "widget" is not same as "Widget" cause the .indexOf dunction is case sensitive
+        console.log(str.indexOf("id")); //outputs "1" because in "Widget" theres "id" in position 1
+
+        //the second parameter of indexOf function allows us to start searching from a particular position E.g below
+        console.log(str.indexOf("dg", 2)); //outputs 12
+    </script>
+</body>
+</html>

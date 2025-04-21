@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./faq.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    background-color: white;
+    width: 65%;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.accordion-title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* .accordion-faq .question {
+    padding: 18px 0px;
+} */
+
+.question{
+    font-size: 22px;
+    padding: 18px 0px;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+
+    position: relative; /*This is because we need to add some sort of icon to it but it's a character */
+}
+
+/* we need to make question active ans show what we want after */
+.question::after {
+    content: "+";
+    position: absolute;
+    right: -5px;
+}
+
+.answer {
+    padding: 5px;
+    font-size: 22px;
+    line-height: 1.5;
+    width: 100%;
+
+    /* to hide the answer content so it's hidden until question is clicked we do the below */
+    height: 0px;
+    overflow: hidden;
+    /* to add the little animation it does when it pops we add transition as seen below */
+    transition: .5s;
+}
+
+/* Javascript styling*/
+.accordion-faq.active .answer {
+    height: 150px;
+}
+
+.accordion-faq.active .question {
+    font-size: 18px;
+    transition: .5s;
+}
+
+.accordion-faq.active .question::after { /* ".accordion-faq.active .question::after"  is used because we are trying to target the cotent element after accordion-faq has been made active so we had to use the active tag of accordion-faq*/
+    content: "-"; 
+    font-size: 22px;
+    transition: .5s;
+}
+
+

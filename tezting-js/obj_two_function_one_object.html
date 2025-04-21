@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = {
+        //     name: "jack",
+        //     age: 30,
+        // };
+
+        // function a() {
+        //     return user;
+        // };
+
+        // function b() {
+        //     return user;
+        // }
+
+        // alert(a() === b());
+
+        function Same() {
+            this.user = "peace";
+            this.age = 30;
+
+            return Same;
+        };
+
+        let a = new Same();
+        let b = new Same();
+
+        alert(a === b); //prints "true"
+
+        //This returns true which means a is same as b because the function constructor returns itself
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //so here there are two objects but we want to apply  a method  to using one external function
+
+        let user = {
+            name: "john",
+        };
+
+        let admin = {
+            name: "pete",
+        };
+
+        function sayHi() {
+            alert(this.name);
+        };
+
+        user.f = sayHi; // user.f is now the method in the user object
+        admin.f = sayHi; //admin.f is now the method in the user object
+
+        user.f();
+        admin.f();
+
+        admin['f'](); // this also prints same as admin.f().
+
+        // alert(admin.name);
+
+        //We tell user, "Hey, you can use the sayHi button," and we also tell admin, "You can use the sayHi button too."When we ask user to use the sayHi button by writing user.f(), it's like pressing a button, and John says his name because that's who user is.Now, if we wanted to ask admin to use the sayHi button, we could write admin.f(), and Pete would say his name because that's who admin is. 
+    </script>
+</body>
+</html>
