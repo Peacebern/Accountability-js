@@ -18,19 +18,40 @@ body {
 
 #task-container {
     background-color: white;
-    width: 400px;
+    /* width: 400px; */
     box-shadow: 0 0 3px;
     border-radius: 20px;
     padding: 20px 10px;
-
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
+
+
+/* This handles the styling of the input form without taking into account the online web styling */
+input:focus {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+/* This handles the styling of the input form  taking into account the online web styling */
+input:-webkit-autofill {
+    border: none !important;
+    outline: none !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+    background-color: white !important;
+    color: #000 !important;
+}
+
 
 #task-container input {
     padding : 2px 20px 2px 10px;
     border-radius: 5px;
     font-size: 22px;
+    border: none;
 }
 
 
@@ -48,6 +69,86 @@ body {
     background-color: green;
     color : white;
     transform: scale(1.1);  /* Slight zoom effect */
+}
+
+/* #task-li {
+    background-color: white;
+    margin-top: 1.5rem;
+    padding: 2rem;
+    list-style-type: none;
+    border-radius: 2rem;
+} */
+
+.task{
+    width: 100%;
+    border : 2px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.task li {
+    flex: 4; /* This means this item will take up 4 times more space of it's container*/
+    align-self: center;
+    font-size: 25px;
+    font-weight: 700;
+    list-style-type: none;
+    /* display: flex;
+    flex-wrap: no-wrap;
+    width: 30%;
+    overflow-x: scroll; */
+}
+
+/* .ment {
+    align-self: center;
+    font-size: 25px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: no-wrap;
+    width: 30%;
+    overflow-x: scroll;
+} */
+
+.checkTask {
+    border: 2px solid green;
+    font-size: 20px;
+    padding : 1rem;
+    border-radius: 5px;
+    transition: .5s;
+    background-color: white;
+    margin-right: 1rem;
+}
+
+.checkTask:hover {
+    background-color: green;
+    color : white;
+    transform: scale(1.1); 
+}
+
+.deleteTask {
+    border: 2px solid red;
+    font-size: 20px;
+    padding : 1rem;
+    border-radius: 5px;
+    transition: .5s;
+    color: red;
+    background-color: white;
+}
+
+.deleteTask:hover {
+    background-color: red;
+    color : white;
+    transform: scale(1.1); 
+}
+
+
+/* Customizing the strike class in the js file so when it's clicked the task will be striked through */
+.strike {
+    text-decoration: line-through;
+    color: grey;
 }
 
 
